@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h1><strong>3D Printing and Laser — Assignment 3</strong><br>
+</h1>
+<img src="Assignment 3 Assets/FIRST IMAGE.jpg" width="500" height="375" alt=""/>
+<div><strong>Lampshade</strong> — mock up</div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 5.08.13 PM.png" width="500" height="306" alt=""/>
+<div><strong>Lampshade</strong> — Individual pieces 27" x 18"</div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 5.00.31 PM.png" width="500" height="367" alt=""/>
+<div><strong>Lampshade </strong>— Screenshot of Rhino work of spine for 3D print</div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 2.56.46 PM.png" width="500" height="375" alt=""/>
+<div><strong>Screenshot </strong>— Grasshopper file</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/diagram.jpg" width="500" height="1300" alt=""/>
+<div><strong>Diagram</strong> — Screenshot showing how pieces fit together</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<p><strong>How I did it:</strong></p>
+<p>Since I am traveling in Italy without access to a laser cutter or 3D printer I thought I'd get as far as I can with the projet up to pressing print. I created my 3D + Laser files for the 3D printer and cardboard using a combination of Rhino, Grasshopper. Here are the basics of what I did with screen shots to follow.</p>
+<p>First thing I did was to measure out the lamp I purchased. Then I measured out some cardboard (3.8 mm) I found in Italy so I had something to reference. I got my inspiration from a combination of places. One was an image of a lamp that Nadya showed in her presentation: <a>https://bit.ly/2Wew8C6/</a> also at <a href="https://schneid.org/">https://schneid.org/</a> The other source of inspiration came from Nathan Melinbrink: <a>https://bit.ly/2V0lZMM/</a> I was fond of Nathan's floor lamp type treatment but it seemed complicated to have each panel attached to two spines so I used the lamp that Nady showed as inspiration to build panels that just used one notch. </p>
+<p>To do this I made a basic shape of a curved line that would eventually become the outline or inner scaffolding of the lamp shade. I revolved this shape and made sure that the outside shaded shape measured to the size I needed to fit my lamp insides. Next I came up with a shape with the panels. At best I would describe this shape as a trapezoid with rounded corners. I placed that shape in a bounding box and used the Grasshopper console set up that Nadya showed us in class ( <a href="https://bit.ly/2Wew8C6">https://bit.ly/2Wew8C6/</a> ) to tell Rhino that I wanted to apply that shape to the side of my lamp scaffolding. Then I used the number sliders to control the height and with of those panels which essentially controlled how many panels I would have to print in the end. Once I had the amount of panels I needed set them as surfaces and brought the shapes in to Illustrator, added a notch to them and repeated the shapes over and over so that I would have the correct amount necessary to print. </p>
+<p>After setting up the panels I realized that they along with the spine would not be enough to hold everything together so I decided to make two inner circles that the spines could attach to. One for the top and one for the bottom. To do this I measured the diameter of the inside of both the top and bottom of the lampshade. I created the circular shapes in illustrator and brought them along with the notch shape in to Rhino so I could apply an ArrayPolar to the notches essentially rotating and copying a total of ten notches — one for each spine. Once finished with these circles I exported both top and bottom back in to the illustrator file that I created for the panels. </p>
+<p>Once the circles were finished I started working on the spine pieces. These I decided would be printed on the 3D printer. For this I made two spine shapes in Illustrator — one with the notches taken out and one without notches. While I suspect I'll have to use the spine with notches I thought it would be nice to see if I could keep the panels in place without. </p>
+<p>To create the 3D file I brought the two shapes in to Rhino. I copied the shapes and moved them the same distance of the thickness of my cardboard (3.8 mm).&nbsp; I then used the Loft command to connect the two pieces after which I applied the Cap command to make them have top and bottom surfaces. </p>
+<p>So with all my panel shapes and circles in Illustrator and the spines in Rhino I have everything ready to print. </p>
+<p>Thankfully Nadya posted a link to video that was made to walk us through the steps: <a href="https://bit.ly/2Wew8C6/">https://bit.ly/2Wew8C6/</a></p>
+<p><strong>THANK YOU NADYA!</strong></p>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 10.19.03 PM.png" width="750" height="364" alt=""/>
+<div>Inspiration from Nadya's lectture <a href="https://schneid.org/">https://schneid.org/</a></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<strong><img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 10.21.35 PM.png" width="750" height="387" alt=""/></strong>
+<div> Inspiration from Nathan Melenbrink <a href="https://bit.ly/2V0lZMM/">https://bit.ly/2V0lZMM/</a></div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 2.18.06 PM.png" width="750" height="437" alt=""/>
+<div> Lamp measurements</div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 2.23.24 PM.png" width="750" height="500" alt=""/>
+<div> Screeshot of line curve being turned in to 'vase' shape for lampshade</div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 2.56.46 PM.png" width="750" height="500" alt=""/>
+<div> Screenshot of Grasshopper components</div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 3.03.54 PM.png" width="750" height="500" alt=""/>
+<div>Screenshot shwing panels created by associating single panel shape with outside of 'vase' shape</div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 3.24.54 PM.png" width="748" height="451" alt=""/>
+<div>Screenshot of single row of surfaces copied and placed off to the side</div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 3.41.01 PM.png" width="750" height="500" alt=""/>
+<div> Screenshot of panel pieces copied and pasted several times for the entire lamp outside</div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 4.10.49 PM.png" width="750" height="450" alt=""/>
+<div>Screenshot of circle shape with notch</div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 4.15.24 PM.png" width="750" height="450" alt=""/>
+<div> Screenshot of ArrayPolar notches</div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 4.45.01 PM.png" width="755" height="450" alt=""/>
+<div>Screenshot of all Rhino pieces</div>
+<div>&nbsp;</div>
+<img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 11.11.40 PM.png" width="750" height="500" alt=""/>
+<div>Screenshot of Grasshopper components
+  <div>&nbsp;</div>
+</div>
+<strong><img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 5.00.31 PM.png" width="750" height="500" alt=""/></strong>
+<div> Screenshot of Rhino file for 3D printer</div>
+<div>&nbsp;</div>
+<strong><img src="Assignment 3 Assets/Screen Shot 2019-04-28 at 5.08.13 PM.png" width="749" height="468" alt=""/></strong>
+<div>&nbsp;</div>
+<p><a href="Assignment 3 Assets/3D plus laser_shapes.3dm">Rhino File</a></p>
+<p><a href="Assignment 3 Assets/3D plus laser_shapes_cardboard.ai">Illustrator File</a></p>
+<p><a href="Assignment 3 Assets/3D plus laser.gh">Grasshopper File</a>&nbsp;</p>
+</body>
+</html>
