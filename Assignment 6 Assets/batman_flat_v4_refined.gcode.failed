@@ -1,0 +1,13 @@
+(1001)
+(T1  D=0.125 CR=0. - ZMIN=0.143 - FLAT END MILL)
+(T2  D=0.0312 CR=0. - ZMIN=0.1509 - FLAT END MILL)
+G0 G90 G94 G17
+G20
+G53 G0 Z0.
+
+(ADAPTIVE1)
+
+M9
+G53 Z0.
+M30
+!Error: Failed to post data. See log for details.
